@@ -5,6 +5,7 @@ import pandas as pd
 import urllib.parse
 from PIL import ImageGrab
 
+
 # inicia o excel
 File = win32com.client.Dispatch("Excel.Application")
 
@@ -12,7 +13,7 @@ File = win32com.client.Dispatch("Excel.Application")
 File.Visible = 1
 
 # Abre o Arquivo
-Workbook = File.Workbooks.open(r"C:\\Users\\Guilherme\\OneDrive\\B.I\\CAMPANHAS\\GPT e GPB\\GPT_GPB.xlsx")
+Workbook = File.Workbooks.open(r"caminho do arquivo")
 
 # Espera a tabela Atualizar
 time.sleep(15)
@@ -26,11 +27,11 @@ time.sleep(15)
 
 # Lista de abas para capturar
 abas = [
-    "ANA MARIA", "EDUARDO", "FELIPE", "HORTENCIA","PAULA","ALAM","MARLON","PEDRO","POLIANE"
+    "***, ***, ***, ***"
 ]
 
 # Caminho da pasta para salvar os prints
-caminho_pasta = r"C:\Users\Guilherme\OneDrive\B.I\CAMPANHAS\GPT e GPB\PRINTS"
+caminho_pasta = r"C:\Users\Guilherme\...\PRINTS"
 os.makedirs(caminho_pasta, exist_ok=True)
 
 # Intervalo para capturar
@@ -80,7 +81,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
 # caminho da planilha:
-CAMINHO_PLANILHA = r"C:\Users\Guilherme\OneDrive\B.I\CAMPANHAS\GPT e GPB\CONTATOS.xlsx"
+CAMINHO_PLANILHA = r"C:\Users\Guilherme\...\CONTATOS.xlsx"
 
 # Inicia Chrome (mantem o perfil ja logado)
 chrome_options = Options()
